@@ -208,9 +208,9 @@ ROUTING:
         3) Process
         ============
 
-            git add .
-            git commmit = m "XXXXXX"
-            git push
+            git add .                           changes -> stanged changes
+            git commit -m "XXXXXX"              staged change -> 0
+            git push                            check commit list in git hub
 
 
 
