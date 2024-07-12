@@ -1,1 +1,58 @@
 /* You can add global styles to this file, and also import other style files */
+
+body{
+    margin: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+thead {
+    background-color: #009879;
+    color: #ffffff;
+}
+
+th {
+    background-color: #009879;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 0.9em;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+caption {
+    caption-side: bottom;
+    padding-top: 10px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.center {
+    text-align: center;
+}

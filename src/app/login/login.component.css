@@ -1,0 +1,75 @@
+/* Parent container */
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+}
+
+/* Child container */
+.child {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Fixed width */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.child:hover {
+    transform: scale(1.05);
+}
+
+/* Form title */
+.child h1 {
+    margin-bottom: 1.5rem;
+    color: #333333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Form labels */
+.child label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555555;
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Form inputs */
+.child input[type="text"],
+.child input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Login button */
+.child button {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Arial', sans-serif;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.child button:hover {
+    background-color: #ee5253;
+    box-shadow: 0 4px 15px rgba(255, 107, 107, 0.6);
+}
+
+/* Ensure the form doesn't stretch beyond its container */
+.child form {
+    display: flex;
+    flex-direction: column;
+}

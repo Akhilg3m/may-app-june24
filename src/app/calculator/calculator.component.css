@@ -1,0 +1,62 @@
+/* Style for the parent container */
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Style for the child container */
+.child {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Style for labels */
+.child label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+/* Style for input fields */
+.child input[type="number"] {
+    width: 200px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style for buttons */
+.child button {
+    width: 60px;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.child button:hover {
+    background-color: #0056b3;
+}
+
+/* Style for the result display */
+.child h1 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+button:disabled{
+    opacity: 0.5;
+}
