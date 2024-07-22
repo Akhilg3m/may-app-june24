@@ -1,0 +1,29 @@
+<input type="text" (keypress)="search()" placeholder="Search" [(ngModel)]="term">
+<button (click)="pricelh()">price low to high</button>
+<button (click)="discount()">apply 50% discount</button>
+<button (click)="total()">total price</button>
+
+<table class="dark-table">
+    <thead>
+        <tr>
+            <th>sno</th>
+            <th>Name</th>
+            <th>Category</th>
+            <th>Price</th>
+            <th>Rating</th>
+            <th>actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products;let i=index">
+            <td>{{i+1}}</td>
+            <td>{{product.name}}</td>
+            <td>{{product.category}}</td>
+            <td>{{product.price}}</td>
+            <td>{{product.rating}}</td>
+            <td>
+                <button (click)="delete(i)">delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

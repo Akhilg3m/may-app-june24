@@ -213,5 +213,70 @@ ROUTING:
             git push                            check commit list in git hub
 
 
+let prices = [10,20,30,40,50,60,70];
+
+// map
+prices = prices.map(price=>price+5);
+
+// filter
+prices = prices.filter(price=>price<50);
+
+// sort
+prices = prices.sort((a,b)=>b-a);
+
+// reduce
+let total = prices.reduce((sum,a)=>sum+a);
+
+
+let products = [
+    {name:'pen', price:20, rating:4},
+    {name:'Phone', price:30000, rating:4.5},
+    {name:'Laptop', price:50000, rating:3.8},
+    {name:'remote', price:1000, rating:2},
+    {name:'shirt', price:3000, rating:1.5}
+  ]
+
+// map
+let productPrices = products.map(product=>product.price+5);
+console.log(productPrices);
+
+products = products.map(product=>{
+  product.price = product.price+5;
+  return product;
+})
+
+// filter
+products = products.filter(product=>product.price<10000)
+
+
+// sort
+products = products.sort((a,b)=>b.price-a.price);
+
+
+// reduce
+let totalPrice = products.reduce((sum,a)=>sum+a.price,0);
+
+
+
+
+
+
+console.log(products,totalPrice);
+let prices = [10,20,30,40,50,60,70];
+
+// map
+prices = prices.map(price=>price+5);
+
+// filter
+prices = prices.filter(price=>price<50);
+
+// sort
+prices = prices.sort((a,b)=>b-a);
+
+// reduce
+let total = prices.reduce((sum,a)=>sum+a);
+
+
+
 
 

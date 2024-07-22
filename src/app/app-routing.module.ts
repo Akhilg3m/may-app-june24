@@ -9,6 +9,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -18,7 +19,8 @@ const routes: Routes = [
     {path:'data-binding', component: DataBindingComponent},
     {path:'calculator', component:CalculatorComponent},
     {path:'directives', component:DirectivesComponent},
-    {path:'pipes', component:PipesComponent}
+    {path:'pipes', component:PipesComponent},
+    {path:'flipkart', component:FlipkartComponent}
   ]},
   {path:'', component:LoginComponent},
   {path:'**',component:PagenotfoundComponent}

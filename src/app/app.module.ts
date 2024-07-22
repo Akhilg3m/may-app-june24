@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { PipesComponent } from './pipes/pipes.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PipesComponent } from './pipes/pipes.component';
     DataBindingComponent,
     CalculatorComponent,
     DirectivesComponent,
-    PipesComponent
+    PipesComponent,
+    FlipkartComponent
   ],
   imports: [
     BrowserModule,
