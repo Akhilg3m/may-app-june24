@@ -1,0 +1,11 @@
+.red-button{
+    background-color: red;
+    color: white;
+    /* padding: 15px; */
+    width: 80%;
+    /* margin-top: 50px; */
+    border: 0;
+    /* border-radius: 20px; */
+    cursor: pointer;
+    /* text-transform: uppercase; */
+}

@@ -278,5 +278,124 @@ let total = prices.reduce((sum,a)=>sum+a);
 
 
 
+HTTP: API Integration:
+======================
+
+Client Server Architecture: (REST API)
+---------------------------
+
+
+
+
+RXJS: Responsible for all async operations in angular
+----- 
+
+    3 features:
+    -----------
+    1. Promise
+    2. Observable
+    3. Subject
+
+    
+         Promise                   Observable
+        =========                 =============
+
+1)   single callback            Multiple callbacks
+
+2)   Executes automaticlly      Executes when ever we subscribe
+
+3)   can not stop in b/w        we can stop in b/w using unsubscribe method.
+
+4)   less rxjs operators        more rxjs operators.
+
+
+
+            Observable                     subject
+            ==========                     ========
+
+1.        unicasting                        multicasting
+
+2.        does not maintain state          maintains state
+
+
+
+SERVICE:
+========
+
+    we use service
+
+        1. when logic is not realated to view
+        2. logic that is requried across multiple components
+
+    create:  ng g s XXXXX
+
+
+DATA FLOW IN FE APPS:
+=====================
+
+
+
+
+API INTEGRATION ANGULAR:
+========================
+
+1) Cerate vehicle component and service
+
+2) Import HttpClientModule
+
+3) Inject HttpClientService in VehicleService
+
+4) Create getVehicles method
+  
+    - it will return observable of data
+
+5) Inject vehicle service in vehicle component
+
+    - subscribe to getVehicles method to listed data
+
+    - data, error two callbacks will be triggered.
+
+    
+ALL POSSIBLE API CALLS:
+=======================
+
+1. all          get        get(url)
+
+2. specific     get        get(url/id)
+
+3. pagination   get        get(url?limit=10&page=1)
+
+4. filtering    get        get(url?filter=red)
+
+5. sorting      get        get(url?sortBy=color&order=asc/desc)
+
+6. create       post       post(url,data);
+
+7. update       put        put(url/id, data);
+
+8. delete       delete     delete(url/id);
+
+
+
+Angular Forms:
+==============
+
+    2 types:
+    --------
+    1. Template Driven Forms
+    2. Reactive Forms
+
+    ***) Reactive forms provide more features than TDForms.
+            Like: touched, dirty, custom validators, form arrays
+
+    Reactive Forms:
+    ---------------
+    1) Import Reactive forms Module.
+    2) Create FormGroup in class.
+    3) Create Form in template.
+    4) Map the controls.
+    5) Check the output in console.
+
+
 
 
