@@ -17,6 +17,7 @@ import { FlipkartComponent } from './flipkart/flipkart.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
     PipesComponent,
     FlipkartComponent,
     VehicleComponent,
-    CreateVehicleComponent
+    CreateVehicleComponent,
+    VehicleDetailsComponent
   ],
   imports: [
     BrowserModule,

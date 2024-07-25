@@ -396,6 +396,13 @@ Angular Forms:
     4) Map the controls.
     5) Check the output in console.
 
+COMMUNICATIONS:
+===============
 
+    3 types
+
+        1) Page Communication
+        2) Component Communication
+        3) Module Communication
 
 
