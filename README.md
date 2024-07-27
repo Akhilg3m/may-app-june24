@@ -13,7 +13,6 @@ Angular: Angular is a framework to build a single page applications(SPA).
         SPA: Only one HTML page
              Part of page will change WRT user activity.
 
-
 ANGULAR Setup:
 ==============
 
@@ -155,6 +154,7 @@ ROUTING:
         ------------------------
 
             ***) Directives are superset and components are subset.
+
 
 
 
@@ -396,6 +396,22 @@ Angular Forms:
     4) Map the controls.
     5) Check the output in console.
 
+
+    FORM TYPES:
+    -----------
+    1. FormGroup
+    2. Nested FormGroup
+    3. Dynamic Forms
+    4. FormArray
+    5. Validations
+
+
+
+
+
+
+
+
 COMMUNICATIONS:
 ===============
 
@@ -404,5 +420,57 @@ COMMUNICATIONS:
         1) Page Communication
         2) Component Communication
         3) Module Communication
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

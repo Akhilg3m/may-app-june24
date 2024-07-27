@@ -13,10 +13,11 @@ import { FlipkartComponent } from './flipkart/flipkart.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { AuthenticationGuard } from './authentication.guard';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
-  {path:'dashboard', component: DashboardComponent, children:[
+  {path:'dashboard', canActivate:[AuthenticationGuard], component: DashboardComponent, children:[
     {path:'welcome', component:WelcomeComponent},
     {path:'home', component:HomeComponent},
     {path:'data-binding', component: DataBindingComponent},
@@ -26,7 +27,8 @@ const routes: Routes = [
     {path:'flipkart', component:FlipkartComponent},
     {path:'vehicle', component:VehicleComponent},
     {path:'create-vehicle', component:CreateVehicleComponent},
-    {path:'vehicle-details/:id', component: VehicleDetailsComponent}
+    {path:'vehicle-details/:id', component: VehicleDetailsComponent},
+    {path:'edit-vehicle/:id', component: CreateVehicleComponent}
   ]},
   {path:'', component:LoginComponent},
   {path:'**',component:PagenotfoundComponent}
