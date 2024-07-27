@@ -18,6 +18,38 @@
     <input type="email" formControlName="email">
     <br>
 
+    <div formGroupName="address">
+
+        <label for="">City:</label>
+        <input type="text" formControlName="city">
+        <br>
+
+        <label for="">Pincode::</label>
+        <input type="number" formControlName="pincode">
+        <br>
+
+    </div>
+
+    <label for="">Type:</label>
+    <input type="radio" name="type" formControlName="type" value="dayScholor">
+    <label for="">DayScholor</label>
+    <input type="radio" name="type" formControlName="type" value="residential">
+    <label for="">Residential</label>
+    <br>
+
+    <div *ngIf="userForm.get('type')?.value == 'dayScholor'">
+        <label for="">Bus Fee:</label>
+        <input type="number" formControlName="busFee">
+        <br>    
+    </div>
+
+    <div  *ngIf="userForm.get('type')?.value == 'residential'">
+        <label for="">Hostel Fee:</label>
+        <input type="number" formControlName="hostelFee">
+        <br>    
+    </div>
+
+
     <button (click)="submit()">submit</button>
 
 </form>
