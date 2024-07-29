@@ -4,3 +4,8 @@ label{
     margin-bottom: 10px;
     margin-left: 10px;
 }
+.error{
+    color: red;
+    margin: 0;
+    margin-left: 100px;;
+}

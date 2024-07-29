@@ -406,6 +406,33 @@ Angular Forms:
     5. Validations
 
 
+    FORM VALIDATIONS:
+    -----------------
+
+    TS:
+    ---
+        age: new FormControl(null, [Validators.required])
+
+    HTML:
+    -----
+
+        <div *ngIf="CONTROL.touched && CONTROL.invalid">
+
+            <p *ngIf="CONTROL.errors?.['required']"> XXXXXXXXX </p>
+
+        </div>
+
+
+        CONTROLS:
+        ---------
+        FormGroup:          userForm.get('name')
+
+        NesteedFormGroup:   userForm.get('address')?.get('pincode')
+
+        FormArray:          cardsFormArray.controls[i]?.get('cvv')
+
+
+
 
 
 
