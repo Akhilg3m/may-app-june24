@@ -19,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { CreateUserComponent } from './create-user/create-user.component';
+import { CapitalDirective } from './capital.directive';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { CreateUserComponent } from './create-user/create-user.component';
     VehicleComponent,
     CreateVehicleComponent,
     VehicleDetailsComponent,
-    CreateUserComponent
+    CreateUserComponent,
+    CapitalDirective
   ],
   imports: [
     BrowserModule,
