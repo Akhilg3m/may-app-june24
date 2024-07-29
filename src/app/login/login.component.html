@@ -8,10 +8,13 @@
 
             <label for="">Email:</label>
             <input type="text" formControlName="email">
-            <br>
+            <br>  
 
             <label for="">Password:</label>
-            <input type="password" formControlName="password">
+            <input type="text" formControlName="password">
+            <div *ngIf="loginForm.get('password')?.touched && loginForm.get('password')?.invalid">
+                <p *ngIf="loginForm.get('password')?.errors?.['pattern']">Password should contain one cap, .......</p>
+            </div>
             <br>
 
             <button (click)="login()">Login</button>
