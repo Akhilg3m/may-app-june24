@@ -20,6 +20,7 @@ import { CreateVehicleComponent } from './create-vehicle/create-vehicle.componen
 import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { CapitalDirective } from './capital.directive';
+import { PricePipe } from './price.pipe';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { CapitalDirective } from './capital.directive';
     CreateVehicleComponent,
     VehicleDetailsComponent,
     CreateUserComponent,
-    CapitalDirective
+    CapitalDirective,
+    PricePipe
   ],
   imports: [
     BrowserModule,
