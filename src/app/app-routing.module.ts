@@ -16,6 +16,7 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
 import { AuthenticationGuard } from './authentication.guard';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { NotifyGuard } from './notify.guard';
+import { ParentComponent } from './parent/parent.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -31,7 +32,8 @@ const routes: Routes = [
     {path:'create-vehicle', component:CreateVehicleComponent},
     {path:'vehicle-details/:id', component: VehicleDetailsComponent},
     {path:'edit-vehicle/:id', component: CreateVehicleComponent},
-    {path:'create-user', canDeactivate:[NotifyGuard], component:CreateUserComponent}
+    {path:'create-user', canDeactivate:[NotifyGuard], component:CreateUserComponent},
+    {path:'parent', component: ParentComponent},
   ]},
   {path:'', component:LoginComponent},
   {path:'**',component:PagenotfoundComponent}

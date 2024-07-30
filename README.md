@@ -452,3 +452,75 @@ COMMUNICATIONS:
 
 
 
+    COMPONENT COMMUNICATION:
+    ========================
+
+        Parent to child:
+        child to parent:
+        ================
+
+
+        parent.html
+        -----------
+
+                <app-child [count]="10"  (countChange)="catch($event)"></app-child>
+
+        child.ts
+        --------
+
+                @Input() public count:number = 0;
+
+
+                @Output() public countChange:EventEmitter<number> = new EventEmitter();
+                send(){
+                    this.countChange.emit(11);
+                }
+
+
+
+    USE CASES:
+    ----------
+    
+    1) When to components in one page
+
+            <app-details [id]="17"><app-details>
+
+    2) Reusable components
+
+            <img *ngIf="product.rating==5" src="five.jpg">
+            <img src="four.jpg">
+            <img src="three.jpg">
+            <img src="two.jpg">
+            <img src="one.jpg">
+
+
+            <app-rating [rating]="product.rating"></app-rating>
+
+            <app-likes [likes]="20" [sad]="30"></app-likes>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
