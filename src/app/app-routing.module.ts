@@ -18,6 +18,7 @@ import { CreateUserComponent } from './create-user/create-user.component';
 import { NotifyGuard } from './notify.guard';
 import { ParentComponent } from './parent/parent.component';
 import { Calculator2Component } from './calculator2/calculator2.component';
+import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -36,6 +37,7 @@ const routes: Routes = [
     {path:'create-user', canDeactivate:[NotifyGuard], component:CreateUserComponent},
     {path:'parent', component: ParentComponent},
     {path:'calculator2', component: Calculator2Component},
+    {path:'about-company', component: AboutCompanyComponent}
 
   ]},
   {path:'', component:LoginComponent},
