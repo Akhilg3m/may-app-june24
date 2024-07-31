@@ -37,7 +37,11 @@ const routes: Routes = [
     {path:'create-user', canDeactivate:[NotifyGuard], component:CreateUserComponent},
     {path:'parent', component: ParentComponent},
     {path:'calculator2', component: Calculator2Component},
-    {path:'about-company', component: AboutCompanyComponent}
+    {path:'about-company', component: AboutCompanyComponent},
+    {
+      path: 'payments',
+      loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
+    }
 
   ]},
   {path:'', component:LoginComponent},
