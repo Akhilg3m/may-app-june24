@@ -17,6 +17,7 @@ import { AuthenticationGuard } from './authentication.guard';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { NotifyGuard } from './notify.guard';
 import { ParentComponent } from './parent/parent.component';
+import { Calculator2Component } from './calculator2/calculator2.component';
 
 const routes: Routes = [
   {path:'login', component:LoginComponent},
@@ -34,6 +35,8 @@ const routes: Routes = [
     {path:'edit-vehicle/:id', component: CreateVehicleComponent},
     {path:'create-user', canDeactivate:[NotifyGuard], component:CreateUserComponent},
     {path:'parent', component: ParentComponent},
+    {path:'calculator2', component: Calculator2Component},
+
   ]},
   {path:'', component:LoginComponent},
   {path:'**',component:PagenotfoundComponent}
