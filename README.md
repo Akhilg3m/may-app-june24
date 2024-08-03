@@ -212,7 +212,9 @@ ROUTING:
             git push                            check commit list in git hub
 
 
-
+        PROCECSS WITH BRANCHES:
+        =======================
+    
             git clone URL
 
                 CREATE FEATURE BRANCH
@@ -240,7 +242,29 @@ ROUTING:
         2) SHIFT BRANCHES
         =================
 
+            1) commit changes then shift
+            2) stash changes (git stash)
+               shift branch
+               coming back and do (git stash pop)
 
+        3) DELETE COMMIT FROM BRANCH
+        ============================
+
+            git log
+
+                11111   mistake commit
+                22222   old commit
+
+            git reset 2222
+            
+        4) MOVE COMMIT TO ANOTHER BRANCH
+        ================================
+
+            git cherry-pick XXXXXXXXXXXXX
+
+
+
+        
 
         
 
