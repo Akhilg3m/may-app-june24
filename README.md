@@ -240,6 +240,15 @@ ROUTING:
         2) SHIFT BRANCHES
         =================
 
+            -> commit changes then shift
+            -> stash changes (git stash)
+               shift branch
+               stash pop after coming back (git stash pop)
+
+        3) 
+
+
+
 
 
         
