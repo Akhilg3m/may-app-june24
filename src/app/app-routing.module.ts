@@ -29,7 +29,7 @@ const routes: Routes = [
     {path:'calculator', component:CalculatorComponent},
     {path:'directives', component:DirectivesComponent},
     {path:'pipes', component:PipesComponent},
-    {path:'flipkart', component:FlipkartComponent},
+    {path:'flipkart-two', component:FlipkartComponent},
     {path:'vehicle', component:VehicleComponent},
     {path:'create-vehicle', component:CreateVehicleComponent},
     {path:'vehicle-details/:id', component: VehicleDetailsComponent},
@@ -38,6 +38,7 @@ const routes: Routes = [
     {path:'parent', component: ParentComponent},
     {path:'calculator2', component: Calculator2Component},
     {path:'about-company', component: AboutCompanyComponent},
+    {path:'two-person-path'},
     {
       path: 'payments',
       loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
