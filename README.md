@@ -182,12 +182,11 @@ ROUTING:
 
             1) install git 
             2) create account in git hub
-            3)
 
             git config --global user.name "XXXXXXX"
             git config --global user.email "XXXXXXX"
 
-        
+
             CHECK:
             ------
                 git config --list
@@ -211,6 +210,41 @@ ROUTING:
             git add .                           changes -> stanged changes
             git commit -m "XXXXXX"              staged change -> 0
             git push                            check commit list in git hub
+
+
+
+            git clone URL
+
+                create branch
+
+            git fetch
+            git branch
+            git checkout XXXXX
+
+            git add .
+            git commit -m "XXXX"
+            git pull origin master
+            git push
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 let prices = [10,20,30,40,50,60,70];
