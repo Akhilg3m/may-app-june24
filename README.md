@@ -215,7 +215,7 @@ ROUTING:
 
             git clone URL
 
-                create branch
+                CREATE FEATURE BRANCH
 
             git fetch
             git branch
@@ -226,8 +226,13 @@ ROUTING:
             git pull origin master
             git push
 
+                PULL REQUEST -> APPROVE -> MERGE
 
 
+        1) MERGE CONFLICT
+        =================
+
+            
 
         
 
