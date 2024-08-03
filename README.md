@@ -245,7 +245,18 @@ ROUTING:
                shift branch
                stash pop after coming back (git stash pop)
 
-        3) 
+        3) DELETE COMMIT FROM BRANCH
+        ============================
+
+            git log
+
+                11111   mistake commit
+                22222   old commit
+
+            git reset 2222
+            
+        4) MOVE COMMIT TO ANOTHER BRANCH
+        ================================
 
 
 
