@@ -26,7 +26,7 @@ const routes: Routes = [
     {path:'welcome', component:WelcomeComponent},
     {path:'home', component:HomeComponent},
     {path:'data-binding', component: DataBindingComponent},
-    {path:'calculator', component:CalculatorComponent},
+    {path:'calculator-one', component:CalculatorComponent},
     {path:'directives', component:DirectivesComponent},
     {path:'pipes', component:PipesComponent},
     {path:'flipkart', component:FlipkartComponent},
@@ -38,6 +38,7 @@ const routes: Routes = [
     {path:'parent', component: ParentComponent},
     {path:'calculator2', component: Calculator2Component},
     {path:'about-company', component: AboutCompanyComponent},
+    {path:'one-user-path'},
     {
       path: 'payments',
       loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
