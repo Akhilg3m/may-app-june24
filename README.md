@@ -232,7 +232,15 @@ ROUTING:
         1) MERGE CONFLICT
         =================
 
-            
+            -> chechkout to the branch
+            -> git pull origin master
+            -> current, incoming, accept both
+            -> git push
+
+        2) SHIFT BRANCHES
+        =================
+
+
 
         
 
